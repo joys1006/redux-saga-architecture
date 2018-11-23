@@ -5,7 +5,7 @@ const StickyHeader = () => {
     return (
         <div className="sticky-header">
             <h1 className="logo">
-                <Link to="/login">스마트매니저 펜션</Link>
+                <Link to="/login">리액트샘플</Link>
             </h1>
         </div>
     )
