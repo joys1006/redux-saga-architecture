@@ -1,0 +1,76 @@
+/**
+ * @author Has
+ * @reg_date 2018-11-07
+ * @summary Login 컴포넌트에 대한 css
+ * @description 로그인 관련
+ */
+
+#Login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 380px;
+    transform: translate(-50%, -60%);
+    .login-title-widget {
+        margin:0 0 40px;
+        text-align: center;
+        h2 {
+            color: $accent-2;
+            font-family: $YgJn, sans-serif;
+            font-style: bold;
+            font-size: rem(41.4);
+        }
+    }
+    .content {    
+        .input-box-wrap {
+            input {
+                height: 58px;
+                padding: 0 10px;
+                font-size: rem(18);
+                color:$primary-1;
+            }
+        }
+        .ant-form-item {
+            margin-bottom: 6px;
+        }
+        .ant-form {
+            label {
+                font-size: $fSize-m;
+            }
+        }
+        .error-message {
+            color: $accent-2;
+        }
+        .submit-button {
+            width: 100%;
+            height: 56px !important;
+            line-height: 56px !important;
+            margin: 20px 0;
+            font-size: rem(18);
+            font-weight: 100;
+        }
+        .login-bottom-wrap {
+            .ant-form-item {
+                padding: 0 0 16px;
+                border-bottom: 2px solid $gray-7;
+            }
+            .ant-checkbox-inner {
+                width: 27px;
+                height: 27px;
+                &:after {
+                    top: 5px;
+                    left: 7px;
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+            .button-inner-right {
+                text-align: right;
+                font-size: $fSize-m;
+                span {
+                    margin:0 5px;
+                }
+           }
+        } 
+    }
+}

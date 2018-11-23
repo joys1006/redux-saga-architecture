@@ -1,0 +1,69 @@
+/**
+ * @author Has
+ * @reg_date 2018-11-13
+ * @summary FindId 컴포넌트에 대한 css
+ */
+
+#FindId {
+
+    .page-tabs-wrap {
+        padding-top: 42px;
+        border: 0;
+        .page-tabs-inner {
+            width: 686px;
+            margin: 0 auto;
+            padding: 0 14px;
+            a {
+                padding: 0 5px;
+            }
+        }
+    }
+
+    .content {
+        width: 686px;
+        margin: 145px auto 0;
+        .text-box {
+            margin: 0 0 24px;
+            h3 {
+                font-size: rem(28);
+                font-weight: 600;
+            }
+            .text-desc {
+                margin: 6px 0 0;
+                p {
+                    font-size: rem(22);
+                    font-weight: 100;
+                }
+            }
+        }
+        .form-wrap {
+            padding:30px;
+            background-color: #fff;
+            .input-box-wrap {
+                input {
+                    width: $input-size-l;
+                }
+            }
+            .item-box {
+                display: flex;
+                align-items: end;
+                justify-content: flex-start;
+                .authentication-button {
+                    display: block;
+                    margin: 41px 0 0 4px;
+                }
+                .count-text {
+                    margin:2px 0 0 19px;
+                    line-height: 40px;
+                    font-size: $fSize-l;
+                    color: $accent-2;
+                    font-weight: bold;
+                }
+            }
+            .submit-wrap {
+                text-align: right;
+            }
+        }
+    }
+
+}

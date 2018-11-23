@@ -1,0 +1,75 @@
+/**
+ * @author Has
+ * @reg_date 2018-09-06
+ * @summary Mixin
+ * @link http://nicolasgallagher.com/micro-clearfix-hack/ Micro Clearfix
+ */
+
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+//font-face
+@mixin font-face($family,$src,$style: normal,$weight: normal) {
+    @font-face {
+        font-family: $family;
+        src: url('#{$src}.eot'); // IE9 compat
+        src: url('#{$src}.eot?#iefix') format('embedded-opentype'), // IE8 and below
+            url('#{$src}.woff') format('woff'), // standards
+            url('#{$src}.ttf') format('truetype'); // Safari, Android, iOS
+
+        font-style: $style;
+        font-weight: $weight;
+    }
+}
+
+//Add Mixin
+@mixin spritebox($left, $top, $height, $width) {
+  background-repeat: no-repeat;
+  background-position: $left $top;
+  height: $height;
+  width: $width;
+}
+
+@mixin boxSizing() {
+    box-sizing:border-box;
+}
+
+@mixin hoverZoom($timer) {
+    transition: all $timer ease-out;
+}
+
+@mixin scaleZoom($zoom1,$zoom2) {
+    transform: scale($zoom1, $zoom2);
+}
+
+@mixin textOverflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+////////////////////////////
+//button
+///////////////////////////
+// $width: button width
+// $font-size: font px
+// $pad: padding
+// $bg: background color
+// $color: font color
+@mixin button($width,$font-size,$pad,$bg,$color,$border,$icon:false) {
+    width: $width;
+    font-size: $font-size;
+    display: inline-block;
+    position: relative;
+    padding: $pad 0;
+    text-align: center;
+    background: $bg;
+    color: $color;
+    border: $border;
+    border-radius: 50px;
+}

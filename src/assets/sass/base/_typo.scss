@@ -1,0 +1,55 @@
+/**
+ * @author Has
+ * @reg_date 2018-09-06
+ * @summary typo
+ * @description 폰트 정의
+ */
+@charset 'utf-8';
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/*
+ * Nanum Square (Korean) http://hangeul.naver.com
+ */
+@include font-face('Nanum Square','../fonts/NanumSquareL',$style: normal,$weight: 100);
+@include font-face('Nanum Square','../fonts/NanumSquareR',$style: normal,$weight: 300);
+@include font-face('Nanum Square','../fonts/NanumSquareB',$style: bold,$weight: 600);
+@include font-face('Nanum Square','../fonts/NanumSquareEB',$style: bold,$weight: 900);
+/*
+ * YG Jalnan
+ */
+@include font-face('YG Jalnan','../fonts/yg-jalnan',$style: normal,$weight: normal);
+/*
+ * Nanum Barun Gothic (Korean) http://hangeul.naver.com
+ */
+@font-face {
+  font-family: 'Nanum Barun Gothic';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Nanum Barun Gothic UltraLight'), local('Nanum Barun Gothic-UltraLight'), local('NanumBarunGothic UltraLight');
+  src: url('../fonts/NanumBarunGothicUltraLight.eot');
+  src: url('../fonts/NanumBarunGothicUltraLight.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NanumBarunGothicUltraLight.woff2') format('woff2'),
+       url('../fonts/NanumBarunGothicUltraLight.woff') format('woff');
+}
+@font-face {
+  font-family: 'Nanum Barun Gothic';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Nanum Barun Gothic Light'), local('Nanum Barun Gothic-Light'), local('NanumBarunGothic Light');
+  src: url('../fonts/NanumBarunGothicLight.eot');
+  src: url('../fonts/NanumBarunGothicLight.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NanumBarunGothicLight.woff2') format('woff2'),
+       url('../fonts/NanumBarunGothicLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Nanum Barun Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nanum Barun Gothic Regular'), local('Nanum Barun Gothic-Regular'), local('NanumBarunGothic Regular');
+  src: url('../fonts/NanumBarunGothic.eot');
+  src: url('../fonts/NanumBarunGothic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NanumBarunGothic.woff2') format('woff2'),
+       url('../fonts/NanumBarunGothic.woff') format('woff');
+}

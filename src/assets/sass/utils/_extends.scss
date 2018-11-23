@@ -1,0 +1,51 @@
+/**
+ * @author Has
+ * @reg_date 2018-09-06
+ * @summary Extends
+ * @description 클래스 형식 단축 css 정의
+ */
+
+.inner-container {
+    width: 1000px;
+    margin: 0 auto
+}
+
+.base-font {
+    font-weight: 400;
+}
+.light {
+    font-weight: 300;
+}
+.bold {
+    font-weight: 700;
+}
+.ex-bold {
+    font-weight: 900;
+}
+// icon set
+.text-hover {
+    a {
+        @include transition(color 0.3s cubic-bezier(.7,.3,0,1),border-color 0.3s cubic-bezier(.7,.3,0,1));
+        &:hover {
+        }
+    }
+}
+
+// guide
+.hand,.pointer{cursor:pointer}
+.underline{text-decoration:underline}
+.relative{position:relative}
+.absolute{position:absolute}
+.small{font-size:11px;letter-spacing:-1px;}
+.desc{font-size:11px;font-family:dotum;color:#848484;letter-spacing:-1px;}
+.hide{display:none;}
+.unvisibility{visibility:hidden;}
+.bold{font-weight:bold;}
+.layout{clear:both;margin:0;padding:0;height:0;border:0;}
+.d-Table { display:table; width:100%; @include boxSizing; }
+.fleft { float:left; }
+.fright { float:right; }
+.center { text-align:center; }
+.m0 { margin:0 !important; }
+.right { text-align:right; }
+

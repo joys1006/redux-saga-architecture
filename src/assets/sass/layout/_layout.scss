@@ -1,0 +1,154 @@
+/**
+ * @author Has
+ * @reg_date 2018-11-13
+ * @summary Layout css
+ * @description 기본 레이아웃 관련
+ */
+
+body,
+#root,
+.App { height: 100%; }
+.ant-layout {
+    min-height: 100%;
+}
+
+#app {
+    padding: 60px 0 0;
+}
+
+/* 레이아웃이 없을때 */
+.is-not-Layout {
+    padding: 0 !important;
+    background: $gray-10;
+    #container {
+        margin: 0;
+        background-color: transparent;
+        .contents {
+            padding: 0;
+        }
+    }
+}
+/* // 레이아웃이 없을때 */
+
+#container, #footer {
+    margin: 20px;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* 컨테이너 */
+#container {
+    h2 {
+        margin: 0 0 16px;
+        font-size: 36px;
+        font-weight: 600;
+    }
+}
+/* // 컨테이너 */
+
+/* 푸터 */
+#footer {
+    margin: 0 20px;
+}
+/* // 푸터 */
+
+/* 헤더 */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #d5dade;
+
+    h1 {
+        a {
+            font-family: $YgJn;
+            font-size: rem(15);
+            font-weight: bold;
+            color: $accent-1;
+        }
+    }
+
+    .box-left {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .box-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    /* 아이콘 */
+    .icons {
+      font-size: 18px;
+      padding: 0 20px;
+      cursor: pointer;
+      transition: color .3s;
+      &.trigger {
+        padding: 0 24px;
+      }
+    }
+    /* //아이콘 */
+
+    .ant-badge-count,
+    .ant-badge-dot {
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .icons:hover {
+      color: #1890ff;
+    }
+
+    /* 계정 셀렉터 */
+    .user-menu-select {
+        .ant-select-selection {
+            width: 300px;
+            height: 59px;
+            border-color:#fff;
+            border-left: 1px solid #d5dade;
+            border-radius: 0;
+            .ant-select-selection__rendered {
+                line-height: 59px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            .ant-select-arrow {
+                right: 20px;
+                color: $primary-2;
+            }
+            &.ant-select-open,
+            &:focus,
+            &:hover {
+                border: 1px solid $primary-2;
+            }
+        }
+    }
+}
+
+.user-menu-dropdown {
+    .ant-select-dropdown-menu-item {
+        line-height: 50px;
+        font-size: $fSize-m;
+        color: $primary-1;
+    }
+}
+
+/* // 헤더 */
+
+/* 사이드 메뉴 */
+#aside {
+    background-color: #fff;
+}
+/* // 사이드 메뉴 */
+.contents {
+    padding: 20px;
+}

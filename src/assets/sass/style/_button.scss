@@ -1,0 +1,131 @@
+/**
+ * @author Has
+ * @reg_date 2018-11-01
+ * @summary button
+ * @description 디자인 버튼 스타일 정의
+ */
+
+$width-1: 134px; // btn-50-m
+$width-2: 90px; // btn-50-s
+$width-3: 120px; // btn-40-m
+$width-4: 90px; // btn-40-s
+$height-1: 50px !important; // btn-50
+$height-2: 40px; // btn-40
+
+/* 버튼 스타일 믹스인 */
+@mixin btnStyle($fontColor, $bdColor, $bgColor) {
+    font-size: $fSize-m;
+    color: $fontColor !important;
+    font-weight: 300;
+    border:1px solid $bdColor !important;
+    border-radius: 3px;
+    background-color: $bgColor !important;
+}
+
+/* button/50/M1/ */
+.btn-50-m1 {
+    width: $width-1;
+    height: $height-1;
+    @include btnStyle($white,$primary-2,$primary-2);
+    &:focus,
+    &:hover {
+        @include btnStyle($white,$primary-3,$primary-3);
+    }
+    &:disabled {
+        @include btnStyle($gray-4,$gray-7,$gray-7);
+    }
+}
+/* button/50/m2/ */
+.btn-50-m2 {
+    width: $width-1;
+    height: $height-1;
+    @include btnStyle($primary-2,$primary-1,$white);
+    &:focus,
+    &:hover {
+        @include btnStyle($primary-3,$primary-3,$gray-10);
+    }
+    &:disabled {
+        @include btnStyle($gray-5,$gray-7,$white);
+    }
+}
+/* button/50/s1/ */
+.btn-50-s1 {
+    width: $width-2;
+    height: $height-1;
+    @include btnStyle($white,$primary-2,$primary-2);
+    &:focus,
+    &:hover {
+        @include btnStyle($white,$primary-3,$primary-3);
+    }
+    &:disabled {
+        @include btnStyle($gray-4,$gray-7,$gray-7);
+    }
+}
+/* button/50/s2/ */
+.btn-50-s2 {
+    width: $width-2;
+    height: $height-1;
+    @include btnStyle($primary-2,$primary-1,$white);
+    &:focus,
+    &:hover {
+        @include btnStyle($primary-3,$primary-3,$gray-10);
+    }
+    &:disabled {
+        @include btnStyle($gray-5,$gray-7,$white);
+    }
+}
+/* button/40/M1/ */
+.btn-40-m1 {
+    width: $width-3;
+    height: $height-2;
+    @include btnStyle($white,$primary-2,$primary-2);
+    &:focus,
+    &:hover {
+        @include btnStyle($white,$primary-3,$primary-3);
+    }
+    &:disabled {
+        @include btnStyle($gray-4,$gray-7,$gray-7);
+    }
+}
+/* button/40/m2/ */
+.btn-40-m2 {
+    width: $width-3;
+    height: $height-2;
+    @include btnStyle($primary-2,$primary-1,$white);
+    &:focus,
+    &:hover {
+        @include btnStyle($primary-3,$primary-3,$gray-10);
+    }
+    &:disabled {
+        @include btnStyle($gray-5,$gray-7,$white);
+    }
+}
+/* button/40/s2/ */
+.btn-40-s1 {
+    width: $width-4;
+    height: $height-2;
+    @include btnStyle($white,$primary-2,$primary-2);
+    &:focus,
+    &:hover {
+        @include btnStyle($white,$primary-3,$primary-3);
+    }
+    &:disabled {
+        @include btnStyle($gray-4,$gray-7,$gray-7);
+        &:hover {
+            @include btnStyle($gray-4,$gray-7,$gray-7);
+        }
+    }
+}
+/* button/40/s2/ */
+.btn-40-s2 {
+    width: $width-4;
+    height: $height-2;
+    @include btnStyle($primary-2,$primary-1,$white);
+    &:focus,
+    &:hover {
+        @include btnStyle($primary-3,$primary-3,$gray-10);
+    }
+    &:disabled {
+        @include btnStyle($gray-5,$gray-7,$white);
+    }
+}

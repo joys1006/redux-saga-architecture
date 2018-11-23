@@ -1,0 +1,69 @@
+/**
+ * @author Has
+ * @reg_date 2018-09-06
+ * @summary Variables
+ * @description font-size = default -> size 16px base -> 1rem
+ */
+
+ // base (베이스css에만 적용)
+$baseFont:'Nanum Square';
+$defaultSize: 16px;
+$baseFontSize: rem(16);
+$baseColor: #354052;
+$baseColorHover:#1abcb0;
+
+//fonts
+$NnBa:'Nanum Barun Gothic';
+$NnSq:'Nanum Square';
+$NnGt:'Nanum Gothic';
+$YgJn: 'YG Jalnan';
+
+//fontSize
+$fSize-s: rem(13);
+$fSize-m: rem(16);
+$fSize-l: rem(20);
+$fSize-xl: rem(36);
+
+// input Size
+$input-size-s: 54px;
+$input-size-m: 120px;
+$input-size-l: 220px;
+$input-size-xl: 320px;
+
+/* Primary - 주요색 */
+$primary-1: #354052;
+$primary-2: #475669;
+$primary-3: #2A3342;
+
+/* Accent - 강조색 */
+$accent-1: #E44647;
+$accent-2: #FF5C5C;
+
+/* Background - 배경 */
+$bg-1: #F8F8F8;
+$bg-2: #ECEEF1;
+$bg-3: #F3F7FC;
+$bg-4: #22B274;
+
+/* Semantic - 상태색 */
+$semantic-1: #EFF0F4;
+
+/* Gray */
+$gray-1: #474747;
+$gray-2: #707070;
+$gray-3: #858585;
+$gray-4: #999999;
+$gray-5: #ADADAD;
+$gray-6: #C2C2C2;
+$gray-7: #D6D6D6;
+$gray-8: #EBEBEB;
+$gray-9: #F0F0F0;
+$gray-10: #F5F5F5;
+$gray-11: #FAFAFA;
+
+// Normal Color(기본컬러)
+$white: #FFFFFF;
+
+//sns color
+$naver-color:#00c63b;
+$facebook-color:#3a589e;

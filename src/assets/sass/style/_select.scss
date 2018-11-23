@@ -1,0 +1,25 @@
+/**
+ * @author Has
+ * @reg_date 2018-11-09
+ * @summary select
+ * @description 셀렉트 스타일 정의
+ */
+
+/* 셀렉트 스타일 */
+.ant-select {
+    font-size: $fSize-m;
+    border: 0;
+    .ant-select-selection {
+        border: 1px solid $gray-7;
+        box-sizing: border-box;
+        &.ant-select-open,
+        &:focus,
+        &:hover {
+            border: 1px solid $primary-2;
+            outline: none;
+        }
+    }
+    .ant-select-selection--single {
+        box-shadow: none;
+    }
+}
