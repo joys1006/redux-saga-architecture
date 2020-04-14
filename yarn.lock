@@ -513,13 +513,13 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
   integrity sha512-ReZxvNHIOv88FlT7rxcXIIC0fPt4KZqZbOlivyWtXLt8ESx84zd3kMC6iK5jVeS2qt+g7ftS7ye4fi06X5rtRQ==
 
-axios@^0.18.0:
-  version "0.18.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
-  integrity sha1-MtU+SFHv3AoRmTts0AB4nXDAUQI=
+axios@^0.18.1:
+  version "0.18.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.18.1.tgz#ff3f0de2e7b5d180e757ad98000f1081b87bcea3"
+  integrity sha512-0BfJq4NSfQXd+SkFdrvFbG7addhYSBA2mQwISr46pD6E5iqkWg02RAs8vyTT/j0RTnoYmeXauBuSv1qKwR179g==
   dependencies:
-    follow-redirects "^1.3.0"
-    is-buffer "^1.1.5"
+    follow-redirects "1.5.10"
+    is-buffer "^2.0.2"
 
 axobject-query@^0.1.0:
   version "0.1.0"
@@ -3177,11 +3177,6 @@ event-emitter@~0.3.5:
     d "1"
     es5-ext "~0.10.14"
 
-eventemitter3@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-2.0.3.tgz#b5e1079b59fb5e1ba2771c0a993be060a58c99ba"
-  integrity sha1-teEHm1n7XhuidxwKmTvgYKWMmbo=
-
 eventemitter3@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.1.0.tgz#090b4d6cdbd645ed10bf750d4b5407942d7ba163"
@@ -3561,10 +3556,10 @@ flatten@^1.0.2:
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
   integrity sha1-2uRqnXj74lKSJYzB54CkHZXAN4I=
 
-follow-redirects@^1.0.0, follow-redirects@^1.3.0:
-  version "1.5.9"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.9.tgz#c9ed9d748b814a39535716e531b9196a845d89c6"
-  integrity sha512-Bh65EZI/RU8nx0wbYF9shkFZlqLP+6WT/5FnA3cE/djNSuKNHJEinGGZgu/cQEkeeb2GdFOgenAmn8qaqYke2w==
+follow-redirects@1.5.10, follow-redirects@^1.0.0:
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
+  integrity sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
   dependencies:
     debug "=3.1.0"
 
@@ -4389,6 +4384,11 @@ is-buffer@^1.1.5:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
   integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
+
+is-buffer@^2.0.2:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-2.0.4.tgz#3e572f23c8411a5cfd9557c849e3665e0b290623"
+  integrity sha512-Kq1rokWXOPXWuaMAqZiJW4XxsmD9zGx9q4aePabbn3qCRGedtH7Cm+zV8WETitMfu1wdh+Rvd6w5egwSngUX2A==
 
 is-builtin-module@^1.0.0:
   version "1.0.0"
@@ -6397,11 +6397,6 @@ path-to-regexp@^1.0.1, path-to-regexp@^1.7.0:
   dependencies:
     isarray "0.0.1"
 
-path-to-regexp@^2.0.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-2.4.0.tgz#35ce7f333d5616f1c1e1bfe266c3aba2e5b2e704"
-  integrity sha512-G6zHoVqC6GGTQkZwF4lkuEyMbVOjoBKAEybQUypI1WTkqinCOrq2x6U2+phkJ1XsEMTy4LjtwPI7HW+NVrRR2w==
-
 path-type@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-1.1.0.tgz#59c44f7ee491da704da415da5a4070ba4f8fe441"
@@ -6991,15 +6986,6 @@ query-string@^4.1.0:
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-4.3.4.tgz#bbb693b9ca915c232515b228b1a02b609043dbeb"
   integrity sha1-u7aTucqRXCMlFbIosaArYJBD2+s=
   dependencies:
-    object-assign "^4.1.0"
-    strict-uri-encode "^1.0.0"
-
-query-string@^5.0.0:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/query-string/-/query-string-5.1.1.tgz#a78c012b71c17e05f2e3fa2319dd330682efb3cb"
-  integrity sha512-gjWOsm2SoGlgLEdAGt7a6slVOk9mGiXmPFMqrEhLQ68rhQuBnpfs3+EmlvqKyxnCo9/PPlF+9MtY02S1aFg+Jw==
-  dependencies:
-    decode-uri-component "^0.2.0"
     object-assign "^4.1.0"
     strict-uri-encode "^1.0.0"
 
@@ -7740,15 +7726,6 @@ redux-logger@^3.0.6:
   dependencies:
     deep-diff "^0.3.5"
 
-redux-pender@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/redux-pender/-/redux-pender-1.2.1.tgz#e77202845b1bb25cb0476fc3439fbfd42a1efb3d"
-  integrity sha512-v6xtnRBgar3ZD1RbHBFbKo36CsOGMUXaU0VLHgmv6jM38v0oYQZFTNxWN3au3OqlXRgiqGyrHtHa2wSvqicsEA==
-  dependencies:
-    eventemitter3 "^2.0.3"
-    path-to-regexp "^2.0.0"
-    query-string "^5.0.0"
-
 redux-saga@^0.16.2:
   version "0.16.2"
   resolved "https://registry.yarnpkg.com/redux-saga/-/redux-saga-0.16.2.tgz#993662e86bc945d8509ac2b8daba3a8c615cc971"
@@ -7761,11 +7738,6 @@ redux-seamless-immutable@^0.4.0:
   dependencies:
     react-router-redux "^4.0.0"
     seamless-immutable "^7.1.2"
-
-redux-thunk@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.3.0.tgz#51c2c19a185ed5187aaa9a2d08b666d0d6467622"
-  integrity sha512-km6dclyFnmcvxhAcrQV2AkZmPQjzPDjgVlQtR0EQjxZPyJ0BnMf3in1ryuR8A2qU0HldVRfxYXbFSKlI3N7Slw==
 
 redux@^4.0.0:
   version "4.0.1"
