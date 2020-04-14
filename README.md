@@ -28,3 +28,4 @@ npm test
 - Redux-Saga
 - ES6 ~
 - Axios
+- Sass
