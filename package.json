@@ -106,7 +106,7 @@
     "cross-env": "^5.2.0",
     "enquire-js": "^0.2.1",
     "immutable": "^3.8.2",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "node-sass": "^4.9.3",
     "prettier-eslint": "^8.8.2",
     "prop-types": "^15.6.2",
