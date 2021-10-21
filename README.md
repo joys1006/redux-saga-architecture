@@ -24,7 +24,6 @@ npm test
 ## Spec (개발 환경 스펙)
 - Webpack4
 - Babel7
-- Typescript
 - Redux-Saga
 - ES6 ~
 - Axios
